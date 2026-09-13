@@ -30,3 +30,6 @@ oac-config.json
 
 # Large website video files are stored directly in S3
 site/videos/
+
+github-cdp-policy.json
+github-cdp-trust.json
