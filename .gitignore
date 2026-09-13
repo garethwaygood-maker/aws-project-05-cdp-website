@@ -1,0 +1,32 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform variable files - may contain sensitive values
+*.tfvars
+*.tfvars.json
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Temporary AWS configuration exports
+acm-config.json
+cloudfront-config.json
+oac-config.json
+
+# macOS
+.DS_Store
+
+# Large website video files are stored directly in S3
+site/videos/
