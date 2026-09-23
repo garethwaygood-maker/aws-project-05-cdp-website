@@ -7,7 +7,7 @@
     <title>Cotswold Drone Pilots | Aerial Filming, FPV, Inspection & Mapping</title>
     <meta name="description" content="Professional drone filming, FPV fly-throughs, roof inspections, photogrammetry, mapping and construction progress services across Oxfordshire, the Cotswolds and the UK.">
     <meta name="theme-color" content="#050807">
-
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,12 +24,12 @@
                 <span></span>
                 <span></span>
             </button>
-
             <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
                 <a href="#services">Services</a>
-            <a href="portfolio.html">Portfolio</a>
+                <a href="portfolio.html">Portfolio</a>
                 <a href="#mapping">Mapping</a>
-                <a href="#fleet">Fleet</a>
+                <a href="fleet.html">Fleet</a>
                 <a href="#clients">Clients</a>
                 <a href="#credentials">Credentials</a>
                 <a href="#contact" class="nav-cta">Contact</a>
@@ -45,15 +45,12 @@
                 <source src="videos/video-cinematic-showreel.mp4" type="video/mp4">
             </video>
 
-            <button class="sound-toggle" id="soundToggle" aria-label="Turn sound on">
-                <span id="soundIcon">🔇</span>
-                 <span id="soundText">Sound On</span>
-            </button>
+
 
             <div class="hero-overlay"></div>
 
             <div class="hero-content">
-                <p class="eyebrow">Cotswolds · Surrounding Counties · UK</p>
+                <p class="eyebrow">Cotswolds and Surrounding Counties · UK</p>
                 <h1>Professional aerial photography and videography</h1>
                 <p class="hero-copy">
                     Commercial drone services for media, property, construction,
@@ -67,16 +64,16 @@
 
                 <div class="hero-stats">
                     <div>
-                        <strong>275+</strong>
-                        <span>Flight hours</span>
+                        <strong>Certified</strong>
+                        <span>CAA Approved</span>
                     </div>
                     <div>
-                        <strong>200+</strong>
-                        <span>UK locations</span>
+                        <strong>Fully Insured</strong>
+                        <span>£10M Public Liability</span>
                     </div>
                     <div>
-                        <strong>GVC</strong>
-                        <span>CAA authorised</span>
+                        <strong>Trust Us</strong>
+                        <span>Expert Pilots</span>
                     </div>
                 </div>
             </div>
@@ -94,13 +91,13 @@
                 </div>
                 <div class="intro-copy">
                     <p>
-                        We provide professional drone filming, FPV fly-throughs,
+                        We provide professional drone filming, fpv fly-throughs,
                         roof and building inspections, mapping and commercial aerial imagery.
                     </p>
                     <p>
-                        From cinematic property footage to repeatable construction progress
-                        flights and photogrammetry missions, each project is planned around
-                        the job rather than simply putting a drone in the air.
+                        From cinematic footage for media projects to construction progress
+                        updates and photogrammetry missions, every project is carefully planned
+                        to deliver the right imagery, data and results.
                     </p>
                 </div>
             </div>
@@ -212,72 +209,7 @@
             </div>
         </section>
 
-        <section class="section section-dark" id="fleet">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker">Our Fleet</p>
-                    <h2>The right aircraft for the job.</h2>
-                </div>
-
-                <div class="fleet-grid">
-
-                    <article class="fleet-card">
-                        <div class="fleet-image">
-                            <img src="images/image-mavic3pro.jpeg" alt="DJI Mavic 3 Pro">
-                        </div>
-                        <div class="fleet-copy">
-                            <h3>DJI Mavic 3 Pro</h3>
-                            <p>
-                                Our primary cinematic platform for high-quality aerial photography
-                                and video, with multiple focal lengths and excellent image quality.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="fleet-card">
-                        <div class="fleet-image">
-                            <img src="images/image-avata2.jpeg" alt="DJI Avata 2 FPV drone">
-                        </div>
-                        <div class="fleet-copy">
-                            <h3>DJI Avata 2</h3>
-                            <p>
-                                Compact FPV platform used for immersive fly-throughs and dynamic
-                                shots through spaces where conventional aerial movement is not possible.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="fleet-card">
-                        <div class="fleet-image">
-                            <img src="images/image-mini4pro.jpeg" alt="DJI Mini 4 Pro">
-                        </div>
-                        <div class="fleet-copy">
-                            <h3>DJI Mini 4 Pro</h3>
-                            <p>
-                                Lightweight, capable and discreet, making it useful where a smaller
-                                aircraft offers operational advantages.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="fleet-card">
-                        <div class="fleet-image">
-                            <img src="images/image-phantom3pro.jpeg" alt="DJI Phantom 3 Pro">
-                        </div>
-                        <div class="fleet-copy">
-                            <h3>DJI Phantom 3 Pro</h3>
-                            <p>
-                                A long-standing part of the fleet and a reminder of how far commercial
-                                drone technology has progressed.
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="section clients-section" id="clients">
+<section class="section clients-section" id="clients">
             <div class="container">
                 <div class="section-heading centered">
                     <p class="section-kicker">Clients & Projects</p>
@@ -399,24 +331,7 @@
 
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        const heroVideo = document.querySelector('.hero-video');
-        const soundToggle = document.getElementById('soundToggle');
-        const soundIcon = document.getElementById('soundIcon');
-        const soundText = document.getElementById('soundText');
 
-        soundToggle.addEventListener('click', () => {
-            heroVideo.muted = !heroVideo.muted;
-
-            if (heroVideo.muted) {
-                soundIcon.textContent = '🔇';
-                soundText.textContent = 'Sound On';
-                soundToggle.setAttribute('aria-label', 'Turn sound on');
-            } else {
-                soundIcon.textContent = '🔊';
-                soundText.textContent = 'Sound Off';
-                soundToggle.setAttribute('aria-label', 'Turn sound off');
-            }
-        });
 
     </script>
 

@@ -1029,3 +1029,32 @@ p {
     .portfolio-grid { grid-template-columns: 1fr; }
     .portfolio-feature .portfolio-copy { padding: 28px; }
 }
+
+
+/* FLEET PAGE */
+.fleet-page-hero {
+    min-height: 560px;
+    display: flex;
+    align-items: flex-end;
+    background:
+        radial-gradient(circle at 78% 38%, rgba(24,199,135,0.18), transparent 28%),
+        linear-gradient(135deg, #050807 0%, #0b100e 55%, #07100c 100%);
+}
+.fleet-page-hero-content {
+    padding: 190px 0 85px;
+}
+.fleet-page-hero-content h1 {
+    margin-bottom: 28px;
+}
+.fleet-page-hero-content > p:last-child {
+    max-width: 760px;
+    color: rgba(255,255,255,0.75);
+    font-size: 1.15rem;
+}
+.fleet-page-section {
+    padding-top: 90px;
+}
+@media (max-width: 760px) {
+    .fleet-page-hero { min-height: 500px; }
+    .fleet-page-hero-content { padding: 160px 0 65px; }
+}
